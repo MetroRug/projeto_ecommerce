@@ -47,7 +47,7 @@ class Produto(models.Model):
             img_pil.close()
             return
 
-        new_heigth = round(new_width * original_height) / original_width
+        new_heigth = round((new_width * original_height) / original_width)
 
         new_img = img_pil.resize((new_width, new_heigth), Image.LANCZOS)
         new_img.save(
