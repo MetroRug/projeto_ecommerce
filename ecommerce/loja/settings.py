@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'crispy_forms',
     # TODO: remover debug toolbar
     'debug_toolbar',
 ]
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 
     # TODO: remover debug toolbar
     "debug_toolbar.middleware.DebugToolbarMiddleware",
